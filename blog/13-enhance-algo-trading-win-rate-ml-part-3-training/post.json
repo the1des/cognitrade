@@ -1,0 +1,13 @@
+{
+  "id": 13,
+  "title": "How to Enhance Algo Trading Win Rate with ML - Part 3: Training",
+  "author": "Mehdi",
+  "date": "Jun 18, 2023",
+  "image": "/posts/13/training-ml-trading.jpg",
+  "summary": "In this third part, we train our machine learning model using TensorFlow and Keras to improve an SMA crossover strategy's win rate. Learn how to preprocess features, tune parameters, and evaluate model accuracy for algorithmic trading.",
+  "seo_title": "Improve Algo Trading Win Rate with ML – Part 3: Training with TensorFlow & Keras",
+  "seo_description": "Train ML models for algo trading with TensorFlow and Keras. Learn preprocessing, model design, callbacks, evaluation, and enhancing SMA crossover strategies.",
+  "seo_keywords": "algo trading training, machine learning trading bot, TensorFlow Keras trading model, SMA crossover ML, training ML model crypto, improve algo trading win rate",
+  "slug": "13-enhance-algo-trading-win-rate-ml-part-3-training",
+  "categories": ["trading", "machine-learning", "algo-trading", "training"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "title": "How to Design a Machine Learning Trading Bot - Part 1: Data Collection",
+  "author": "Bahman",
+  "date": "Jan 01, 2020",
+  "image": "/posts/1/how-to-design-machine-learning-trading-bot-p1-data-collection.png",
+  "summary": "Learn how to start building a machine learning trading bot. In this first part, we focus on collecting and preparing cryptocurrency market data, using BTC/USDT as an example.",
+  "seo_title": "How to Design a Machine Learning Trading Bot – Part 1: Data Collection Guide",
+  "seo_description": "Learn how to collect cryptocurrency OHLCV and historical market data step by step to power a machine learning trading bot with accurate, data-driven predictions.",
+  "seo_keywords": "machine learning trading bot, crypto trading automation, data collection for trading bot, OHLCV crypto data, BTCUSDT historical data, Binance trading bot tutorial",
+  "slug": "1-how-to-design-ml-trading-bot-part-1-data-collection",
+  "categories": ["trading", "machine learning", "data collection"]
+}

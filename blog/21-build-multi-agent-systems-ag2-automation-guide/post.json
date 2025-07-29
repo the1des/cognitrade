@@ -1,0 +1,13 @@
+{
+  "id": 21,
+  "title": "How to Build Multi-Agent Systems with AG2: A Simple Guide for Automation",
+  "author": "Bahman",
+  "date": "Jun 03, 2025",
+  "image": "/posts/21/ag2-multi-agent-automation.jpg",
+  "summary": "Learn how to build multi-agent systems using AG2 (AutoGen) for real-world automation. This guide walks through creating an AI-driven trade reporting pipeline with Python, assistant agents, and real-time data handling.",
+  "seo_title": "Build Multi-Agent Systems with AG2 (AutoGen): Python Guide for Automation",
+  "seo_description": "Build multi-agent systems with AG2 (AutoGen). Learn to coordinate AI agents for reporting, charting, and publishing trade updates using Python.",
+  "seo_keywords": "AG2 AutoGen multi-agent systems, build AI automation, AG2 Python tutorial, multi-agent automation trading, AG2 assistant agents example",
+  "slug": "21-build-multi-agent-systems-ag2-automation-guide",
+  "categories": ["automation", "ai", "multi-agent-systems", "ag2"]
+}

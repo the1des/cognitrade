@@ -1,0 +1,13 @@
+{
+  "id": 7,
+  "title": "How to Develop a Machine Learning Trading Bot - Part 1: Data Collection",
+  "author": "Bahman",
+  "date": "Jun 02, 2021",
+  "image": "/posts/7/data-collection-dev.png",
+  "summary": "In this first part of the development season, we collect and store live and historical cryptocurrency data for machine learning trading bots. Learn how to use Binance and Kraken APIs to build a 1-minute OHLCV database for BTC/USDT and BTC/EUR.",
+  "seo_title": "How to Develop a Machine Learning Trading Bot – Part 1: Collecting Crypto Market Data",
+  "seo_description": "Collect and store 1-minute OHLCV crypto data for ML trading bots. Learn about Binance and Kraken APIs, data sources, and setting up PostgreSQL for BTC pairs.",
+  "seo_keywords": "machine learning trading bot, crypto data collection, Binance API OHLCV, Kraken API trading bot, BTCUSDT historical data, 1-minute OHLCV database",
+  "slug": "7-how-to-develop-ml-trading-bot-part-1-data-collection",
+  "categories": ["trading", "machine learning", "data collection", "development"]
+}

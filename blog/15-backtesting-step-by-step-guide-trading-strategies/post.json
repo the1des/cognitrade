@@ -1,0 +1,13 @@
+{
+  "id": 15,
+  "title": "What Is Backtesting? A Step-by-Step Guide for Trading Strategies",
+  "author": "Maryam",
+  "date": "Dec 07, 2023",
+  "image": "/posts/15/backtesting-guide.jpg",
+  "summary": "Backtesting lets you test trading strategies on historical data before risking real money. Learn the step-by-step process, key performance metrics, and common pitfalls to improve your trading decisions.",
+  "seo_title": "Backtesting Explained: Step-by-Step Guide, Metrics & Pitfalls for Trading Strategies",
+  "seo_description": "Learn how to backtest trading strategies. Discover how to define rules, gather data, measure performance, analyze results, and avoid common backtesting errors.",
+  "seo_keywords": "backtesting trading strategies, backtesting guide, trading strategy performance, backtesting pitfalls, Sharpe ratio backtest, historical data trading test",
+  "slug": "15-backtesting-step-by-step-guide-trading-strategies",
+  "categories": ["trading", "backtesting", "strategy-development"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": 10,
+  "title": "How to Enhance Algo Trading Win Rate with ML - Part 1: Labelling Data",
+  "author": "Mehdi",
+  "date": "Jan 29, 2022",
+  "image": "/posts/10/labelling-data.jpg",
+  "summary": "In this first part, we improve an algorithmic trading strategy’s win rate by cleaning and relabeling SMA crossover signals. Learn how to backtest, correct labels, and prepare clean data for a machine learning trading model.",
+  "seo_title": "Improve Algo Trading Win Rate with Machine Learning – Part 1: Labelling Data for Better Backtesting",
+  "seo_description": "Improve algo trading by relabeling SMA crossover signals. Learn to backtest, clean losing labels, and prep datasets for machine learning to boost win rates.",
+  "seo_keywords": "algo trading win rate, machine learning trading bot, SMA crossover strategy, relabeling trading data, backtesting crypto strategies, BTCUSDT ML trading",
+  "slug": "10-enhance-algo-trading-win-rate-ml-part-1-labelling-data",
+  "categories": ["trading", "machine-learning", "algo-trading", "backtesting"]
+}

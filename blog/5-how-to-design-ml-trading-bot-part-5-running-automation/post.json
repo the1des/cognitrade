@@ -1,0 +1,13 @@
+{
+  "id": 5,
+  "title": "How to Design a Machine Learning Trading Bot - Part 5: Running an Automation",
+  "author": "Bahman",
+  "date": "Apr 28, 2021",
+  "image": "/posts/5/running-automation.png",
+  "summary": "In this fifth part, we explore how to turn trading signals into automated actions. Learn how to place, retrieve, and cancel orders via exchange APIs, handle stop-loss and take-profit, and build a basic crypto bot for spot trading.",
+  "seo_title": "How to Design a Machine Learning Trading Bot – Part 5: Running an Automated Crypto Bot",
+  "seo_description": "Connect your trading bot to crypto exchanges via secure APIs. Learn order placement, balance management, stop-loss, take-profit, and basic spot trading automation.",
+  "seo_keywords": "machine learning trading bot, crypto trading automation, exchange API trading bot, Binance trading bot guide, stop-loss automation, take-profit automation, spot trading bot",
+  "slug": "5-how-to-design-ml-trading-bot-part-5-running-automation",
+  "categories": ["trading", "machine learning", "automation"]
+}

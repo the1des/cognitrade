@@ -1,0 +1,13 @@
+{
+  "id": 12,
+  "title": "Stream Processing: A Critical Component of MLOps for ML-Based Trading Bots",
+  "author": "K1",
+  "date": "May 13, 2023",
+  "image": "/posts/12/stream-processing-mlops.jpg",
+  "summary": "Stream processing is essential for ML-based trading bots, enabling real-time market data analysis, faster trading decisions, and continuous learning. Learn how we used Faust and Kafka to build a scalable stream processing pipeline.",
+  "seo_title": "Stream Processing for MLOps in ML Trading Bots: Real-Time Data with Faust & Kafka",
+  "seo_description": "Stream processing boosts ML trading bots with real-time data. Learn how Faust and Kafka improve accuracy, enable learning, and support scalable MLOps workflows",
+  "seo_keywords": "stream processing trading bots, MLOps for trading, Faust Python crypto, Kafka stream processing, real-time ML trading, ML trading bot data pipeline",
+  "slug": "12-stream-processing-mlops-ml-trading-bots",
+  "categories": ["trading", "machine-learning", "mlops", "stream-processing"]
+}

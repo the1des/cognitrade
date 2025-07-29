@@ -1,0 +1,13 @@
+{
+  "id": 2,
+  "title": "How to Design a Machine Learning Trading Bot - Part 2: Data Analysis",
+  "author": "Bahman",
+  "date": "Aug 19, 2020",
+  "image": "/posts/2/how-to-design-machine-learning-trading-bot-p2-data-analysis.png",
+  "summary": "In this second part, we dive into cleaning, filtering, and transforming raw OHLCV data into structured features and labels ready for machine learning. Learn why good data preparation is crucial for building an accurate trading bot.",
+  "seo_title": "How to Design a Machine Learning Trading Bot – Part 2: Data Analysis & Feature Engineering",
+  "seo_description": "Learn how to clean, filter, and engineer OHLCV data for machine learning trading bots. Data preparation is the key to accurate predictions and reliable automated trading.",
+  "seo_keywords": "machine learning trading bot, data analysis for trading bots, feature engineering OHLCV, crypto trading data preparation, BTCUSDT data analysis, trading bot accuracy",
+  "slug": "2-how-to-design-ml-trading-bot-part-2-data-analysis",
+  "categories": ["trading", "machine learning", "data analysis"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": 16,
+  "title": "Unlocking the Power of ML Visualization with Comet: How We Optimize and Understand Our Models at 1DES",
+  "author": "Maryam",
+  "date": "Jun 17, 2024",
+  "image": "/posts/16/ml-visualization-comet.jpg",
+  "summary": "At 1DES, we use Comet to visualize, track, and optimize our ML experiments. Learn how confusion matrices, t-SNE, UMAP, and visual dashboards improve model understanding, debugging, and collaboration.",
+  "seo_title": "ML Visualization with Comet: Optimize, Debug & Understand Models Better | 1DES",
+  "seo_description": "See how 1DES uses Comet for ML visualization. Explore confusion matrices, t-SNE, UMAP, and how visual insights improve models, experiments, and collaboration.",
+  "seo_keywords": "ML visualization Comet, Comet machine learning experiments, t-SNE UMAP ML, confusion matrix Comet, ML experiment tracking, optimize ML models visualization",
+  "slug": "16-ml-visualization-comet-optimize-understand-models-1des",
+  "categories": ["machine-learning", "visualization", "mlops", "tools"]
+}

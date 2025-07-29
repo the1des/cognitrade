@@ -1,0 +1,13 @@
+{
+  "id": 9,
+  "title": "How to Develop a Machine Learning Trading Bot - Part 2: Data Analysis",
+  "author": "Bahman",
+  "date": "Dec 12, 2021",
+  "image": "/posts/9/data-analysis-dev.png",
+  "summary": "In this second part of the development season, we clean, visualize, and engineer features for machine learning trading bots. Learn how to select and build effective features, normalize data, and prepare it for training.",
+  "seo_title": "How to Develop a Machine Learning Trading Bot – Part 2: Data Cleaning, Visualization & Feature Engineering",
+  "seo_description": "Analyze and prepare OHLCV crypto data for machine learning. Learn data cleaning, visualization, feature creation, and correlation checks for better trading models.",
+  "seo_keywords": "machine learning trading bot, data analysis crypto bot, feature engineering trading, OHLCV data visualization, SMA feature selection, crypto ML data cleaning",
+  "slug": "9-how-to-develop-ml-trading-bot-part-2-data-analysis",
+  "categories": ["trading", "machine-learning", "data-analysis", "development"]
+}

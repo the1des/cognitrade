@@ -1,0 +1,13 @@
+{
+  "id": 14,
+  "title": "Labels and Features: The Key Building Blocks of Machine Learning Predictions",
+  "author": "Maryam",
+  "date": "Jun 27, 2023",
+  "image": "/posts/14/labels-features-ml.png",
+  "summary": "Labels and features form the backbone of machine learning. Learn what they are, how they interact in supervised learning, and why feature engineering is critical for improving model performance.",
+  "seo_title": "Labels and Features in Machine Learning: Definitions, Examples & Feature Engineering",
+  "seo_description": "Understand labels and features in machine learning. Learn their roles, the importance of feature engineering, and how they affect accuracy in supervised learning.",
+  "seo_keywords": "labels in machine learning, features in machine learning, feature engineering ML, supervised learning labels features, ML model predictions",
+  "slug": "14-labels-and-features-key-building-blocks-ml-predictions",
+  "categories": ["machine-learning", "fundamentals", "feature-engineering"]
+}

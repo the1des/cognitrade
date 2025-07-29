@@ -1,0 +1,13 @@
+{
+  "id": 4,
+  "title": "How to Design a Machine Learning Trading Bot - Part 4: Build a Model",
+  "author": "Bahman",
+  "date": "Feb 19, 2021",
+  "image": "/posts/4/build-model.png",
+  "summary": "In this fourth part, we design a trading model using machine learning. Learn how to train, test, and backtest your model, using SMA20 labels and simple buy/sell strategies as a starting point.",
+  "seo_title": "How to Design a Machine Learning Trading Bot – Part 4: Building and Backtesting a Trading Model",
+  "seo_description": "Build a crypto trading model with machine learning using SMA20 labels. Learn training, testing, backtesting, and how to create long and short strategies.",
+  "seo_keywords": "machine learning trading bot, build trading model, SMA20 trading strategy, backtesting ML trading bot, long short trading strategies, ML trading pipeline",
+  "slug": "4-how-to-design-ml-trading-bot-part-4-build-model",
+  "categories": ["trading", "machine learning", "model-building"]
+}

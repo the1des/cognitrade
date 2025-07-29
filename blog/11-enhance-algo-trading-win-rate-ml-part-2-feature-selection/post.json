@@ -1,0 +1,13 @@
+{
+  "id": 11,
+  "title": "How to Enhance Algo Trading Win Rate with ML - Part 2: Feature Selection",
+  "author": "Mehdi",
+  "date": "Jun 01, 2022",
+  "image": "/posts/11/feature-selection.jpg",
+  "summary": "In this second part, we select and engineer suitable features to feed our machine learning model. Learn how to build trend-based features, normalize values, avoid correlated variables, and visualize distributions for better algo trading performance.",
+  "seo_title": "Improve Algo Trading Win Rate with ML – Part 2: Feature Selection for Trading Bots",
+  "seo_description": "Choose and build features for ML trading bots. Learn to normalize indicators, avoid correlation, and visualize distributions to refine algorithmic strategies.",
+  "seo_keywords": "algo trading feature selection, machine learning trading bot, feature engineering crypto, SMA crossover strategy, correlated features trading, ML trading bot optimization",
+  "slug": "11-enhance-algo-trading-win-rate-ml-part-2-feature-selection",
+  "categories": ["trading", "machine-learning", "algo-trading", "feature-selection"]
+}

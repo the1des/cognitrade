@@ -1,0 +1,13 @@
+{
+  "id": 6,
+  "title": "How to Design a Machine Learning Trading Bot - Part 6: Risk Management",
+  "author": "Bahman",
+  "date": "May 06, 2021",
+  "image": "/posts/6/risk-management.png",
+  "summary": "In this sixth part, we focus on monitoring open positions and applying risk management. Learn how to adjust stop-loss and take-profit dynamically using machine learning, ensuring better control over trades and minimizing losses.",
+  "seo_title": "How to Design a Machine Learning Trading Bot – Part 6: Risk Management & Trade Monitoring",
+  "seo_description": "Monitor trades and manage risk with machine learning. Learn dynamic stop-loss and take-profit, real-time data analysis, and automation for smarter trading.",
+  "seo_keywords": "machine learning trading bot, risk management trading bot, dynamic stop-loss, dynamic take-profit, trade monitoring automation, OHLCV risk analysis, ML trading strategies",
+  "slug": "6-how-to-design-ml-trading-bot-part-6-risk-management",
+  "categories": ["trading", "machine learning", "risk-management"]
+}

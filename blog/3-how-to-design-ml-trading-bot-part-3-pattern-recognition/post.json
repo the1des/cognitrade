@@ -1,0 +1,13 @@
+{
+  "id": 3,
+  "title": "How to Design a Machine Learning Trading Bot - Part 3: Pattern Recognition",
+  "author": "Bahman",
+  "date": "Dec 29, 2020",
+  "image": "/posts/3/pattern-recognition.png",
+  "summary": "In this third part, we focus on recognizing patterns in analyzed market data, starting with trends like bullish and bearish movements. Learn how to label data for machine learning using SMA20 and prepare for binary classification.",
+  "seo_title": "How to Design a Machine Learning Trading Bot – Part 3: Pattern Recognition with SMA20",
+  "seo_description": "Learn to spot bullish and bearish trends in crypto data using pattern recognition and label OHLCV data for binary classification in trading bots.",
+  "seo_keywords": "machine learning trading bot, pattern recognition trading, bullish bearish trend detection, SMA20 trend analysis, binary classification trading bot, OHLCV pattern recognition",
+  "slug": "3-how-to-design-ml-trading-bot-part-3-pattern-recognition",
+  "categories": ["trading", "machine-learning", "pattern-recognition"]
+}

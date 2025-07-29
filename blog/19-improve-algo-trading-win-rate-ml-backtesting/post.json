@@ -1,0 +1,13 @@
+{
+  "id": 19,
+  "title": "How to Improve Algo Trading Win Rate with ML and Backtesting",
+  "author": "Mehdi",
+  "date": "Apr 23, 2025",
+  "image": "/posts/19/ml-backtesting-trading.jpg",
+  "summary": "In this final part of our series, we combine machine learning predictions with backtesting to evaluate trading strategies. Learn how ML improved our SMA crossover strategy’s win rate using TensorFlow, Keras, and the Backtesting library.",
+  "seo_title": "Improve Algo Trading Win Rate with Machine Learning & Backtesting | SMA Strategy Case Study",
+  "seo_description": "Boost trading win rates with ML and backtesting. Compare SMA crossover vs ML labels using TensorFlow and Keras for higher accuracy.",
+  "seo_keywords": "algo trading backtesting, improve trading win rate ML, SMA crossover ML, TensorFlow Keras trading bot, backtesting ML trading strategies, algorithmic trading ML case study",
+  "slug": "19-improve-algo-trading-win-rate-ml-backtesting",
+  "categories": ["trading", "machine-learning", "backtesting", "algo-trading"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": 17,
+  "title": "What Is Bucketizing in Machine Learning",
+  "author": "Maryam",
+  "date": "Dec 15, 2024",
+  "image": "/posts/17/bucketizing-ml.jpg",
+  "summary": "Bucketizing (binning) groups continuous values into discrete intervals, simplifying data analysis and making patterns easier to detect. Learn how it works, why it’s used, and where it benefits machine learning workflows.",
+  "seo_title": "Bucketizing in Machine Learning: Definition, Benefits & Examples",
+  "seo_description": "Learn bucketizing in machine learning—how grouping continuous data into bins simplifies analysis, reduces noise, and boosts model interpretability.",
+  "seo_keywords": "bucketizing machine learning, binning in ML, data preprocessing ML, categorical buckets ML, reducing noise binning, ML feature engineering bucketizing",
+  "slug": "17-what-is-bucketizing-in-machine-learning",
+  "categories": ["machine-learning", "data-preprocessing", "feature-engineering"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": 18,
+  "title": "Feature Store Architecture for Real-Time ML Trading Pipelines",
+  "author": "K1",
+  "date": "Apr 14, 2025",
+  "image": "/posts/18/feature-store-ml-trading.png",
+  "summary": "A Feature Store is a critical MLOps component for ML-based trading bots, ensuring consistent, reusable, and real-time features. Learn how we built a hybrid online-offline feature store at 1DES using Faust and PostgreSQL.",
+  "seo_title": "Feature Store for Real-Time ML Trading: Architecture, Benefits & 1DES Implementation",
+  "seo_description": "Feature Stores power real-time ML trading. See how 1DES uses Faust and PostgreSQL to manage features and streamline online and offline trading pipelines.",
+  "seo_keywords": "feature store ML trading, real-time feature store, MLOps trading bots, Faust feature store Python, PostgreSQL feature store, algorithmic trading ML features",
+  "slug": "18-feature-store-architecture-real-time-ml-trading-pipelines",
+  "categories": ["trading", "machine-learning", "mlops", "feature-store"]
+}

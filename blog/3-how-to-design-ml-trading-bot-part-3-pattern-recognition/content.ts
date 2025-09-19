@@ -1,74 +1,128 @@
 export default `
-​<p><strong>Previously on &ldquo;How to design a machine learning trading bot&rdquo;</strong></p>
+<section aria-labelledby="pattern-title" style="max-width:720px;margin:0 auto;padding:16px;line-height:1.75;font-size:16px;">
 
-<p>We have started with &ldquo;<a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p1-data-collection" target="_blank">Collecting Data</a>&rdquo;:</p>
+  <h2 id="pattern-title" style="font-size:1.25rem;line-height:1.3;margin:0 0 1rem;font-weight:700;">
+    Previously on “How to design a machine learning trading bot”
+  </h2>
 
-<p>We found out what is OHLCV data, and we learned why we need historical data and online data both together.</p>
+  <p style="margin:0 0 1rem;">
+    We have started with
+    “<a href="https://cognitrade.1des.com/posts/1-how-to-design-ml-trading-bot-part-1-data-collection" target="_blank" rel="noopener noreferrer">Collecting Data</a>”.
+  </p>
 
-<p>Then we continued with &ldquo;<a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p2-data-analysis" target="_blank">Data Analysis</a>&rdquo;</p>
+  <p style="margin:0 0 1rem;">
+    We found out what OHLCV data is, and we learned why we need historical data and online data together.
+  </p>
 
-<p>We have seen how cleaning the data including features engineering is important. We learned that to make a stable machine learning model we need to prepare data in the right way and finally, we found out how visualizing data can help us to reach the goal.</p>
+  <p style="margin:0 0 1rem;">
+    Then we continued with
+    “<a href="https://cognitrade.1des.com/posts/2-how-to-design-ml-trading-bot-part-2-data-analysis" target="_blank" rel="noopener noreferrer">Data Analysis</a>”.
+  </p>
 
-<p>So, let&rsquo;s start the third step considering that we already have valid data in our hands.</p>
+  <p style="margin:0 0 1rem;">
+    We saw how important data cleaning—including feature engineering—is. To make a stable machine learning model, we must prepare data the right way and, finally, visualize it to reach the goal.
+  </p>
 
-<p>This article is the third episode from a series of articles with the title of &ldquo;How to design a machine learning trading bot&rdquo;</p>
+  <p style="margin:0 0 1rem;">
+    So, let’s start the third step considering that we already have valid data in our hands.
+  </p>
 
-<p><strong>Step 3: Finding a pattern in analyzed data</strong></p>
+  <p style="margin:0 0 1rem;">
+    This article is the third episode in the series titled “How to design a machine learning trading bot”.
+  </p>
 
-<p>Discovering patterns in the data is a very fundamental task that has been played by advanced machine learning methods and your creativity.</p>
+  <h3 style="font-size:1.125rem;line-height:1.35;margin:1.25rem 0 0.75rem;font-weight:700;">
+    Step 3: Finding a pattern in analyzed data
+  </h3>
 
-<p>Let&rsquo;s start with this main question in the market:</p>
+  <p style="margin:0 0 1rem;">
+    Discovering patterns in the data is a fundamental task that blends advanced machine-learning methods with your creativity.
+  </p>
 
-<p>Do you believe, some patterns in the market repeat frequently? If so, we are on the same track.</p>
+  <p style="margin:0 0 0.5rem;">Let’s start with this main question in the market:</p>
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+    Do you believe some patterns in the market repeat frequently? If so, we are on the same track.
+  </blockquote>
 
-<p><img alt="Pattern Recognition" src="https://1des.com/uploads/posts/how-to-design-p3/how-to-p3.png" style="height:351px; width:350px" /></p>
+  <p style="margin:0 0 1rem;">
+    Let’s start with one of the simplest patterns in technical analysis: the <strong>Trend</strong>. If you don’t know what a trend is, pause here for a minute and search on Google.
+  </p>
 
-<p>Let&#39;s start with one of the simplest patterns in technical analysis and that&rsquo;s &ldquo;Trend&rdquo;. So, if you don&rsquo;t know what is the trend about, just pause here for a minute and search on Google.</p>
+  <p style="margin:0 0 1rem;">
+    We can find two main patterns in trends: Bullish (Up Trend) and Bearish (Down Trend). (Again, if you don’t know about them, pause and search on Google.)
+  </p>
 
-<p>We can find two main patterns in the trend: Bullish (Up Trend) and Bearish (Down Trend). (Again if you don&rsquo;t know about them just pause and search on Google :))</p>
+  <p style="margin:0 0 1rem;">
+    Let’s recap what we’ve done so far. We broke the problem of “finding a trend (pattern)” into a smaller problem: detecting bullish/bearish trends. The key is: we don’t start searching for patterns blindly in raw numeric data.
+  </p>
 
-<p>So, let&#39;s recap what we have done so far because it seems we haven&rsquo;t done anything, but actually, we did what we were looking for.</p>
+  <figure style="margin:0 0 1rem;">
+    <img alt="“Astrology” and “Horoscope”" src="/posts/3/horoscope.gif" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+  </figure>
 
-<p>In short, we break the problem into a smaller problem which was finding a trend (pattern) into finding a bullish/bearish trend (pattern). The main key here is we don&rsquo;t start finding a pattern in raw numeric data blindly.</p>
+  <p style="margin:0 0 1rem;">
+    In the pattern-recognition phase, be careful. Pattern hunting can turn into “Astrology” or “Horoscope” if you chase nonsense. There’s a lot of data, and you can always weave stories between patterns. On the other side is “Astronomy”. Always follow the data like an astronomer and a scientist—not an astrologer or a horoscopist.
+  </p>
 
-<p><img alt="“Astrology” and “Horoscope”" src="https://1des.com/uploads/posts/how-to-design-p3/horoscope.gif" style="height:480px; width:480px" /></p>
+  <figure style="margin:0 0 1rem;">
+    <img alt="Astronomer & Scientist way" src="/posts/3/astronomer.gif" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+  </figure>
 
-<p>In the pattern recognition phase, you should be so careful and aware. Finding a pattern could be like &ldquo;Astrology&rdquo; and &ldquo;Horoscope&rdquo; if you just look for any nonsense pattern. There are a lot of data out there and you can find many patterns, and even you can make many stories between these patterns, Oppositely, on the other side, we have &ldquo;Astronomy&rdquo;. Always make sure, you are following the data like an astronomer and a scientist, not an astrologer or a horoscopist.</p>
+  <p style="margin:0 0 1rem;">
+    Back to our sample: we want to find the <strong>Bullish Trend</strong> pattern. One of the simplest strategies is using the <strong>Moving Average</strong>.
+  </p>
 
-<p><img alt="Astronomer &amp; Scientist way" src="https://1des.com/uploads/posts/how-to-design-p3/astronomer.gif" style="height:384px; width:384px" /></p>
+  <h4 style="font-size:1rem;line-height:1.35;margin:1rem 0 0.5rem;font-weight:700;">
+    Bullish and Bearish pattern
+  </h4>
 
-<p>Okay then. Let&rsquo;s get back to our sample. We want to find the &ldquo;Bullish Trend&rdquo; pattern, and one of the simplest strategies to catch this pattern is using the &ldquo;Moving Average&rdquo;. (Pause and google it)</p>
+  <p style="margin:0 0 1rem;">
+    Finding a bullish trend by comparing price to <strong>SMA20</strong> (Simple Moving Average 20) is simple and effective—my “Hello, World!” of trading courses ;)
+  </p>
 
-<p><strong>Bullish and Bearish pattern:</strong></p>
+  <p style="margin:0 0 0.5rem;">In the chart below, follow SMA20 as the black curved line. We can define:</p>
+  <ul style="margin:0 0 1rem 1.25rem;padding:0;">
+    <li><strong>Bullish:</strong> if Close &gt; SMA20</li>
+    <li><strong>Bearish:</strong> if Close &lt; SMA20</li>
+  </ul>
 
-<p>Finding a bullish trend by following toward SMA20 (Simple Moving Average 20) is one of the simple and easy ways in the market, I&rsquo;ve called it the &ldquo;Hello, World!&rdquo; in trading courses ;)</p>
+  <figure style="margin:0 0 1rem;">
+    <img alt="(Gold/USD, 5m, 27 Nov 2020)" src="/posts/3/chart.png" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+  </figure>
 
-<p>In the following chart, you can follow the SMA20 with the black curved line. You can simply say:</p>
+  <h3 style="font-size:1.125rem;line-height:1.35;margin:1.25rem 0 0.75rem;font-weight:700;">
+    Machine Learning
+  </h3>
 
-<p>Bullish: If Close &gt; SMA20</p>
+  <p style="margin:0 0 1rem;">
+    When does machine learning show up? To solve a problem with ML, you choose a method. Some problems fit <strong>Unsupervised Learning</strong>; others fit <strong>Regression</strong>.
+    As always, we start simple—with <strong>Binary Classification</strong>.
+  </p>
 
-<p>Bearish: If Close &lt; SMA20</p>
+  <figure style="margin:0 0 1rem;">
+    <img alt="Binary Classification" src="/posts/3/binary.gif" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+  </figure>
 
-<p><img alt="(Gold/USD, 5m, 27 Nov 2020)" src="https://1des.com/uploads/posts/how-to-design-p3/chart.png" style="height:180px; width:500px" /></p>
+  <p style="margin:0 0 1rem;">
+    In binary classification, each record has a label [0,1], and the model predicts 0 or 1 for new records.
+  </p>
 
-<p>&nbsp;</p>
+  <p style="margin:0 0 1rem;">
+    How can this help detect a bullish trend? We’ll implement it next season (“How to develop a machine learning trading bot”). For a conclusion here, assume:
+  </p>
 
-<p><strong>Machine Learning</strong></p>
+  <p style="margin:0 0 1rem;">
+    For each record, set the label to 1 if Close &gt; SMA20; otherwise set it to 0. In the end, we have an OHLCV dataset (see the first episode on Data Collection) including SMA20 and a target column [0,1].
+    After training an ML classifier, if the prediction is 1 we’re in a bullish trend; if it’s 0, we’re not.
+  </p>
 
-<p>So, when machine learning shows up?</p>
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+    <em>I always start with a simple concept. Once you fully understand the idea, you can develop it into a more complex solution.</em>
+  </blockquote>
 
-<p>To solve a problem with machine learning, you need to choose a method. For example, there are some problems that you can find a solution with &ldquo;Unsupervised Learning&rdquo; methods, and some problems are solved with &ldquo;Regression&rdquo; methods.</p>
-
-<p>Again and as always we start with one of the simplest methods which is &ldquo;Binary Classification&rdquo;.</p>
-
-<p><img alt="Binary Classification" src="https://1des.com/uploads/posts/how-to-design-p3/binary.gif" style="height:334px; width:334px" /></p>
-
-<p>In binary classification, you have a label [0,1] for your records. Plus, the machine is going to predict 0 or 1 for your new record.</p>
-
-<p>Now, How binary classification can help us to find a bullish trend? Practically, we will develop it in our next season (How to develop a machine learning trading bot), but having a conclusion for this episode, we assume:</p>
-
-<p>To find a bullish pattern we set the label to 1 if Close &gt; SMA20 for each record and we set it to 0 if it&rsquo;s not. In the end, we have a dataset of OHLCV (check out the very first episode, Data Collection) including an indicator SMA20, plus a target column (label) [0,1]. After training with ML methods, if the prediction comes to 1 it means we have a bullish trend, and if it shows 0 means we are not in a bullish pattern.</p>
-
-<blockquote><em>If you&rsquo;ve noticed so far, I always start with the simple concept and I believe if you fully understand the idea, then you can develop it into a more complex solution.</em></blockquote>
-
-`
+</section>
+`;

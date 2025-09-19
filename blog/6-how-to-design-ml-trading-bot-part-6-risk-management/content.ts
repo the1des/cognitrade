@@ -1,120 +1,197 @@
 export default `
+<section aria-labelledby="section-title"
+  style="max-width:720px;margin:0 auto;padding:16px;line-height:1.75;font-size:16px;">
 
-<p>We have started with &ldquo;<a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p1-data-collection" target="_blank">Collecting Data</a>&rdquo;:</p>
+  <h2 id="section-title" style="font-size:1.25rem;line-height:1.3;margin:0 0 1rem;font-weight:700;">
+    Step 6: Monitoring the Trade & Risk Management
+  </h2>
 
-<p>We found out what is OHLCV data, and we learned why we need historical data and online data both together.</p>
+  <p style="margin:0 0 1rem;">
+    We have started with “
+    <a href="https://cognitrade.1des.com/posts/1-how-to-design-ml-trading-bot-part-1-data-collection" target="_blank" rel="noopener noreferrer">
+      Collecting Data
+    </a>”:
+  </p>
 
-<p>Then we continued with &ldquo;<a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p2-data-analysis" target="_blank">Data Analysis</a>&rdquo;</p>
+  <p style="margin:0 0 1rem;">
+    We found out what OHLCV data is, and we learned why we need historical data and online data together.
+  </p>
 
-<p>We have seen how cleaning the data including features engineering is important. We learned that to make a stable machine learning model we need to prepare data in the right way and finally, we found out how visualizing data can help us to reach the goal.</p>
+  <p style="margin:0 0 1rem;">
+    Then we continued with “
+    <a href="https://cognitrade.1des.com/posts/2-how-to-design-ml-trading-bot-part-2-data-analysis" target="_blank" rel="noopener noreferrer">
+      Data Analysis
+    </a>”.
+  </p>
 
-<p>Then we continued with&nbsp;<a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p3-pattern-recognition" target="_blank">finding a pattern</a>&nbsp;and we noted you can be trapped like a horoscopist to find a pattern in data, and always follow the scientific ways and act as an astronomer. Then we found a very simple pattern which was &ldquo;SMA20&rdquo; and we discussed how to label them to [0,1].</p>
+  <p style="margin:0 0 1rem;">
+    We saw how important data cleaning and feature engineering are. To make a stable machine learning model, we need to prepare data the right way and, finally, visualize it to reach the goal.
+  </p>
 
-<p>Then, we&nbsp;<a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p4-build-model" target="_blank">build a model</a>. We explained after you made an ML (Machine Learning) model, you should evaluate it with a backtest. And at this point, you need a strategy to Buy and Sell. It means, we already have a signal to open a Long/Short position.</p>
+  <p style="margin:0 0 1rem;">
+    Then we continued with
+    <a href="https://cognitrade.1des.com/posts/3-how-to-design-ml-trading-bot-part-3-pattern-recognition" target="_blank" rel="noopener noreferrer">finding a pattern</a>
+    and noted you can be trapped like a horoscopist when searching for patterns—always follow scientific methods and act as an astronomer. We identified a simple pattern, “SMA20,” and discussed how to label it to [0,1].
+  </p>
 
-<p>Finally, we showed how to&nbsp;<a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p5-running-automation" target="_blank">run the automation</a>, by these actions:</p>
+  <p style="margin:0 0 1rem;">
+    Then, we
+    <a href="https://cognitrade.1des.com/posts/4-how-to-design-ml-trading-bot-part-4-build-model" target="_blank" rel="noopener noreferrer">built a model</a>.
+    After you build an ML model, you should evaluate it with a backtest. At this point, you need a strategy to Buy and Sell—meaning we already have a signal to open a Long/Short position.
+  </p>
 
-<ul>
-	<li>Place an order</li>
-	<li>Retrieve an order</li>
-	<li>Cancel an order</li>
-	<li>Get the asset&rsquo;s balance</li>
-	<li>Get Online price</li>
-</ul>
+  <p style="margin:0 0 0.5rem;">
+    Finally, we showed how to
+    <a href="https://cognitrade.1des.com/posts/5-how-to-design-ml-trading-bot-part-5-running-automation" target="_blank" rel="noopener noreferrer">run the automation</a>,
+    by these actions:
+  </p>
 
-<p>Following by understanding the concept of exchanges, API, and spot trading.</p>
+  <ul style="margin:0 0 1rem 1.25rem;padding:0;">
+    <li>Place an order</li>
+    <li>Retrieve an order</li>
+    <li>Cancel an order</li>
+    <li>Get the asset’s balance</li>
+    <li>Get online price</li>
+  </ul>
 
-<p>Now it&rsquo;s time to take care of the position we have opened and make sure we reach the profit or make our loss minimum as possible.</p>
+  <p style="margin:0 0 1rem;">Following that, we understood exchanges, APIs, and spot trading.</p>
 
-<p><strong>Step 6: Monitoring the trade and Risk Management</strong></p>
+  <p style="margin:0 0 1rem;">
+    Now it’s time to take care of the position we opened and make sure we reach profit—or minimize loss as much as possible.
+  </p>
 
-<p>First, let&rsquo;s start to answer this question:</p>
+  <h3 style="font-size:1.125rem;line-height:1.35;margin:1.25rem 0 0.75rem;font-weight:700;">
+    Step 6: Monitoring the Trade and Risk Management
+  </h3>
 
-<blockquote>Why do we need to monitor the trade and our position?</blockquote>
+  <p style="margin:0 0 0.5rem;">First, let’s answer this question:</p>
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+    Why do we need to monitor the trade and our position?
+  </blockquote>
 
-<p>Back to years ago with classic trading, it was so normal when you open a position based on a given signal all information you need has been given to you by the signal maker.</p>
+  <p style="margin:0 0 1rem;">
+    Years ago with classic trading, it was normal that when you opened a position based on a given signal, all information you needed was provided by the signal maker.
+  </p>
 
-<p><img alt="Risk Management" src="https://1des.com/uploads/posts/how-to-design-p6/how-to-des-6.png" style="height:577px; width:568px" /></p>
+  <p style="margin:0 0 0.5rem;">The following example is one of these classic signals:</p>
 
-<p>The following example is one of this classic signal:</p>
+  <ul style="margin:0 0 1rem 1.25rem;padding:0;">
+    <li>Market: Whatever ;)</li>
+    <li>Side: Buy</li>
+    <li>Order type: Limit</li>
+    <li>Open position: 100</li>
+    <li>Take-profit (TP) 1: 110</li>
+    <li>Take-profit (TP) 2: 115</li>
+    <li>Stop-loss (SL): 90</li>
+  </ul>
 
-<ul>
-	<li>Market: Whatever ;)</li>
-	<li>Side: Buy</li>
-	<li>Order type: Limit</li>
-	<li>Open position: 100</li>
-	<li>Take-profit (TP) 1: 110</li>
-	<li>Take-profit (TP) 2: 115</li>
-	<li>Stop-loss (SL): 90</li>
-</ul>
+  <p style="margin:0 0 1rem;">
+    Suppose we are the signal maker and try to understand the meaning of this signal with our data vision.
+  </p>
 
-<p>As you can see you have all the information you need for TP1, TP2, and SL. Suppose we are the signal maker and try to understand the meaning of this signal with our data vision.</p>
+  <figure style="margin:0 0 1rem;">
+    <img alt="Signal example" src="/posts/6/signal.gif" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+    <figcaption style="font-size:0.875rem;color:#6b7280;margin-top:0.5rem;">Classic signal layout</figcaption>
+  </figure>
 
-<p><img alt="signal" src="https://1des.com/uploads/posts/how-to-design-p6/signal.gif" style="height:360px; width:480px" /></p>
+  <p style="margin:0 0 1rem;">
+    Signal maker: Based on the data I collected I decided what would be the best trade for me. I don’t care what happens after I open a position because I’m so smart and predicted what could happen; I’ve already set my stop-loss and take-profit.
+  </p>
 
-<p>Signal maker: Based on the data I&rsquo;ve already collected I have decided what would be the best trade for me. And I don&rsquo;t care what happens after I open a position because I&rsquo;m so smart and I predicted what could happen, for this reason, I&rsquo;ve already set my stop-loss and take-profit.</p>
+  <p style="margin:0 0 1rem;">Can you see the problem behind this kind of prediction and action?</p>
 
-<p>Can you see the problem behind this kind of prediction and action?</p>
+  <p style="margin:0 0 1rem;">
+    It’s easy to fix: evaluate the trade with new market data and be flexible to change stop-loss or take-profit while the position is still open. With this perspective, we can follow three methods:
+  </p>
 
-<p>It&rsquo;d be so easy to fix this error. We need to evaluate our trade with the new data from the market and we should be flexible to change stop-loss or take-profit while the position is still open. With this perspective, we can follow three methods:</p>
+  <ol style="margin:0 0 1rem 1.25rem;padding:0;">
+    <li>Update SL and TP every minute (the minimum timeframe).</li>
+    <li>Update SL and TP on each <em>defined</em> period (not the one you’re trading).</li>
+    <li>Update SL and TP on the same timeframe you’re trading.</li>
+  </ol>
 
-<ol>
-	<li>Update SL and TP every minute (The minimum time frame)</li>
-	<li>Update SL and TP on each [defined] period (which is not the period you&rsquo;re trading)</li>
-	<li>Update SL and TP on the time frame you&rsquo;re trading.</li>
-</ol>
+  <p style="margin:0 0 1rem;"><em>So, what does it mean?</em></p>
 
-<p><em>So, what does it mean?</em></p>
+  <p style="margin:0 0 0.5rem;">Let’s consider we are trading in the 1H (1 hour) timeframe.</p>
 
-<p>Let&rsquo;s consider we are trading in the 1H (1Hour) time frame.</p>
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+    <em>Trading in the 1H timeframe means our decision to buy and sell is based on the OHLCV in 1H.</em>
+  </blockquote>
 
-<blockquote><em>Trading in the 1H time frame means our decision to buy and sell is based on the OHLCV in 1H.</em></blockquote>
+  <p style="margin:0 0 1rem;">
+    1) Updating SL and TP every minute means we decide changes on 1-minute OHLCV.
+  </p>
 
-<p>1- Then, updating SL and TP every minute (method 1) means we will decide to change TP and SL on 1minutes OHLCV.</p>
+  <p style="margin:0 0 1rem;">
+    2) Method 2: change TP/SL every 15 minutes (lower timeframe) or every 2 hours (higher timeframe).
+  </p>
 
-<p>2- Method 2: If we decide to change TP or SL every 15 minutes based on the changes in the last 15 minutes (Lower time frame) or if we update SL or TP every 2 hours (Higher time frame)</p>
+  <p style="margin:0 0 1rem;">
+    3) Method 3: decide about changing TP/SL every hour by looking at the last hour’s data.
+  </p>
 
-<p>3- By following the third method, you will decide about changing SL or TP every hour by looking at the last hour&#39;s data.</p>
+  <figure style="margin:0 0 1rem;">
+    <img alt="Problem solved illustration" src="/posts/6/problem-solved.gif" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+    <figcaption style="font-size:0.875rem;color:#6b7280;margin-top:0.5rem;">Adapting TP/SL dynamically</figcaption>
+  </figure>
 
-<p><img alt="problem solved" src="https://1des.com/uploads/posts/how-to-design-p6/problem-solved.gif" style="height:480px; width:480px" /></p>
+  <p style="margin:0 0 1rem;">
+    If you’re following from the
+    <a href="https://cognitrade.1des.com/posts/1-how-to-design-ml-trading-bot-part-1-data-collection" target="_blank" rel="noopener noreferrer">
+      first episode
+    </a>,
+    you’ve seen I go for the simplest way to design and later to develop. That’s my trick to estimate an idea. You know which method we should start with!
+  </p>
 
-<p>If you&rsquo;re following me from our&nbsp;<a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p1-data-collection" target="_blank">first episode</a>, you have seen that I always go for the simplest way to design and later on to develop. This is my trick to estimate the idea. Well, I bet, you know what method we should start!</p>
+  <p style="margin:0 0 1rem;">
+    Yes—continue with the third method: update SL and TP on the same timeframe we are trading.
+  </p>
 
-<p>Yes, that&rsquo;s right. We are continuing with the third method which is updating SL and TP at the same time frame we are trading.</p>
+  <h3 style="font-size:1.125rem;line-height:1.35;margin:1.25rem 0 0.75rem;font-weight:700;">Machine Learning</h3>
 
-<h2>Machine Learning:</h2>
+  <p style="margin:0 0 1rem;">It’s back again. Do you remember what we’ve done so far? Let’s recap:</p>
 
-<p>It backs again. Do you remember what we have done so far? Let&rsquo;s recap it:</p>
+  <ol style="margin:0 0 1rem 1.25rem;padding:0;">
+    <li><a href="https://cognitrade.1des.com/posts/1-how-to-design-ml-trading-bot-part-1-data-collection" target="_blank" rel="noopener noreferrer">Data Collection</a></li>
+    <li><a href="https://cognitrade.1des.com/posts/2-how-to-design-ml-trading-bot-part-2-data-analysis" target="_blank" rel="noopener noreferrer">Analyzing Data</a></li>
+    <li><a href="https://cognitrade.1des.com/posts/3-how-to-design-ml-trading-bot-part-3-pattern-recognition" target="_blank" rel="noopener noreferrer">Pattern Recognition</a></li>
+    <li><a href="https://cognitrade.1des.com/posts/4-how-to-design-ml-trading-bot-part-4-build-model" target="_blank" rel="noopener noreferrer">Build a Model</a></li>
+    <li><a href="https://cognitrade.1des.com/posts/5-how-to-design-ml-trading-bot-part-5-running-automation" target="_blank" rel="noopener noreferrer">Running Automation</a></li>
+  </ol>
 
-<p>&nbsp;</p>
+  <p style="margin:0 0 1rem;">
+    Bad news: we must do all these steps again. Good news: we’ve already done them, so it’s easier to redo on a smaller scale.
+  </p>
 
-<ol>
-	<li><a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p1-data-collection" target="_blank">Data Collection</a></li>
-	<li><a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p2-data-analysis" target="_blank">Analyzing Data</a></li>
-	<li><a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p3-pattern-recognition" target="_blank">Pattern Recognition</a></li>
-	<li><a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p4-build-model" target="_blank">Build a Model</a></li>
-	<li><a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p5-running-automation" target="_blank">Running automation</a></li>
-</ol>
+  <p style="margin:0 0 1rem;">
+    First, collect the last hour’s OHLCV—from the time we opened the position to the time we want to process.
+  </p>
 
-<p>So, I have good news and bad news. The bad news is we have to do it all these steps again. And the good news is, we have done it once then it&rsquo;s easy to redo it again on a small scale.</p>
+  <p style="margin:0 0 1rem;">
+    Then analyze it and find proper features. A key difference now is the trade position itself—our entry becomes a key feature.
+  </p>
 
-<p>First, we collect the last hour data (OHLCV), from the time we opened the position till the time we want to process.</p>
+  <p style="margin:0 0 1rem;">
+    After that, find a pattern, do training/testing and backtesting.
+  </p>
 
-<p>Then, we analyze it and find the proper features. One of the differences between analyzing data at this time and before is the trade position. This means our key feature at this point is our trade entrance.</p>
+  <p style="margin:0 0 1rem;">Then, make a model.</p>
 
-<p>After that, we need to find a pattern and do the training and testing and also backtesting.</p>
+  <p style="margin:0 0 1rem;">
+    Finally, run the bot to change SL/TP on the exchange. For example, you might cancel the old SL and place a new order for the updated SL.
+  </p>
 
-<p>Then, we should make a model.</p>
+  <figure style="margin:0 0 1rem;">
+    <img alt="Pattern example" src="/posts/6/pattern.gif" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+    <figcaption style="font-size:0.875rem;color:#6b7280;margin-top:0.5rem;">Pattern workflow</figcaption>
+  </figure>
 
-<p>Finally, we need to run the bot to change the SL or TP on the exchange. For example, in this step maybe you need to cancel the old SL on the exchange and place a new order for the new SL.</p>
-
-<p><img alt="pattern" src="https://1des.com/uploads/posts/how-to-design-p6/pattern.gif" style="height:240px; width:240px" /></p>
-
-<p><strong>Conclusion:</strong></p>
-
-<p>Risk management and monitoring the position is a separate part of trading with the new input and output. To reach the positive result you need to do all parts from 1 to 5 again. In our development season (Which starts in January 2021) when we want to develop this part we will go deeper and talk more about it.</p>
-
-<p>&nbsp;</p>
-
-
-`
+  <p style="margin:0 0 0.5rem;"><strong>Conclusion:</strong></p>
+  <p style="margin:0 0 1rem;">
+    Risk management and monitoring the position are a separate part of trading with new inputs and outputs. To reach positive results, you need to do parts 1 to 5 again. In our development season (which starts in January 2021), when we develop this part, we will go deeper and talk more about it.
+  </p>
+</section>
+`;

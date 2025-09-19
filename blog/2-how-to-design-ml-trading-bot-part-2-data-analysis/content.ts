@@ -1,52 +1,103 @@
 export default `
-​
-<p><strong>Previously on &ldquo;How to design a machine learning trading bot&rdquo;</strong></p>
+<section aria-labelledby="data-analysis-title" style="max-width:720px;margin:0 auto;padding:16px;line-height:1.75;font-size:16px;">
 
-<p>We have started with &ldquo;<a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p1-data-collection" target="_blank">Collecting Data</a>&rdquo;</p>
+  <h2 style="font-size:1.25rem;line-height:1.3;margin:0 0 1rem;font-weight:700;">
+    Previously on “How to design a machine learning trading bot”
+  </h2>
 
-<p>We found out what is OHLCV data, and we learned why we need historical data and online data both together.</p>
+  <p style="margin:0 0 1rem;">
+    We have started with
+    “<a href="https://cognitrade.1des.com/posts/1-how-to-design-ml-trading-bot-part-1-data-collection" target="_blank" rel="noopener noreferrer">Collecting Data</a>”.
+  </p>
 
-<blockquote>
-<p>In this part, we dive into the process of preparing and transforming raw financial data into clean, structured input ready for use in machine learning models &mdash; a crucial step that determines the accuracy and reliability of your trading bot.</p>
-</blockquote>
+  <p style="margin:0 0 1rem;">
+    We found out what OHLCV data is, and we learned why we need both historical and online data.
+  </p>
 
-<p>So, let&rsquo;s start the second step considering that we already collected the data and we have it.</p>
+  <blockquote style="margin:0 0 1.25rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+    In this part, we dive into the process of preparing and transforming raw financial data into clean, structured input ready for machine learning models—a crucial step that determines the accuracy and reliability of your trading bot.
+  </blockquote>
 
-<p>This article is the second episode from a series of articles with the title of &ldquo;How to design a machine learning trading bot&rdquo;</p>
+  <p style="margin:0 0 1rem;">
+    So, let’s start the second step, considering we already collected the data and have it.
+  </p>
 
-<h2>Step 2: Data Analysis</h2>
+  <p style="margin:0 0 1rem;">
+    This article is the second episode in the series <em>“How to design a machine learning trading bot”</em>.
+  </p>
 
-<p>&nbsp;</p>
+  <h2 id="data-analysis-title" style="font-size:1.25rem;line-height:1.3;margin:1.25rem 0 0.75rem;font-weight:700;">
+    Step 2: Data Analysis
+  </h2>
 
-<div data-oembed-url="https://www.youtube.com/watch?v=uMa7_umV5fI">
-<div>
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe allow="accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *; web-share *;" allowfullscreen="" scrolling="no" src="//if-cdn.com/8ZBCgv1" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" tabindex="-1"></iframe></div>
-</div>
-</div>
+  <!-- Responsive YouTube embed -->
+  <div data-oembed-url="https://www.youtube.com/watch?v=uMa7_umV5fI" style="position:relative;width:100%;padding-bottom:56.25%;margin:0 0 1.25rem;">
+    <iframe
+      src="//if-cdn.com/8ZBCgv1"
+      title="YouTube video player"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      loading="lazy"
+      style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;">
+    </iframe>
+  </div>
 
-<p>Cleaning data, filtering them, and features engineering data is one of the essential steps in the machine learning approach.</p>
+  <p style="margin:0 0 1rem;">
+    Cleaning data, filtering, and feature engineering are essential steps in any machine learning approach.
+  </p>
 
-<p>To explain how important this section means, I can split the whole development time into ten frames, and &ldquo;Analysing Data&rdquo; should take half the time of the whole process, which is five frames. In other words, you&rsquo;re working on the historical data to provide an expected version of data for a machine.</p>
+  <p style="margin:0 0 1rem;">
+    To explain its importance: imagine splitting development time into ten frames—“Analyzing Data” alone should take five of them. You are working with historical data to provide a structured, usable version for the machine.
+  </p>
 
-<p>Keep in your mind that these data are like feed for the machines and, if you feed them with a portion of healthy, low-fat food then you can expect them to run better, but if you provide poor quality food for them, then if you have the top most expensive best quality machine in the world, it doesn&rsquo;t work properly for you.</p>
+  <p style="margin:0 0 1rem;">
+    Think of this as nutrition for machines: if you feed them with healthy, high-quality data, they perform well. If you feed poor-quality data, even the most powerful machine in the world won’t work properly.
+  </p>
 
-<p>If you have a mathematics or statistics background you are so fitted for this section, but if you don&rsquo;t have it, don&rsquo;t worry :) you can reach your targets with basic knowledge.</p>
+  <p style="margin:0 0 1rem;">
+    If you have a mathematics or statistics background, this section will feel natural. But if not—don’t worry! Basic knowledge is enough to reach your goals.
+  </p>
 
-<p><img alt="Visualizing Data" src="https://1des.com/uploads/posts/a2/how-to-p2.png" style="height:216px; width:300px" /></p>
+  <figure style="margin:0 0 1.25rem;">
+    <img alt="Visualizing Data" src="/posts/2/how-to-design-machine-learning-trading-bot-p2-data-analysis.png" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+    <figcaption style="font-size:0.875rem;color:#6b7280;margin-top:0.5rem;">Visualizing Data</figcaption>
+  </figure>
 
-<h2>Visualizing Data:</h2>
+  <h2 style="font-size:1.125rem;line-height:1.35;margin:1.25rem 0 0.75rem;font-weight:700;">
+    Visualizing Data
+  </h2>
 
-<p>Visualizing data is a method to see and analyze them in an easy and perfect way. Thus, by this level, you are going to work a lot with plots and charts and they help you to see what you miss in the raw numbers.</p>
+  <p style="margin:0 0 1rem;">
+    Visualization makes data easier to understand and analyze. At this stage, you’ll work with plots and charts to spot insights that raw numbers can hide.
+  </p>
 
-<h2>Key Data&nbsp;Analysis Terminology:</h2>
+  <h2 style="font-size:1.125rem;line-height:1.35;margin:1.25rem 0 0.75rem;font-weight:700;">
+    Key Data Analysis Terminology
+  </h2>
 
-<p>There are two main keywords in data analysis that you should know before you go further. &ldquo;Labels&rdquo; and &ldquo;Features&rdquo;</p>
+  <p style="margin:0 0 1rem;">
+    Two key terms in data analysis you must know before going further: <strong>Labels</strong> and <strong>Features</strong>.
+  </p>
 
-<p>In the&nbsp;<a href="https://developers.google.com/machine-learning/crash-course/framing/ml-terminology" target="_blank">Google machine learning crash course</a>, you can find a fine explanation of these terms.</p>
+  <p style="margin:0 0 1.25rem;">
+    For a detailed explanation, see the
+    <a href="https://developers.google.com/machine-learning/crash-course/framing/ml-terminology" target="_blank" rel="noopener noreferrer">
+      Google Machine Learning Crash Course
+    </a>.
+  </p>
 
-<h2>Last but not least</h2>
+  <h2 style="font-size:1.125rem;line-height:1.35;margin:1.25rem 0 0.75rem;font-weight:700;">
+    Last but not least
+  </h2>
 
-<p>In many machine learning courses and tutorials, they provide prepared data for you and the course starts with how you train the machine. The data they use in their examples are totally engineered and ready to go for the training, but in reality, the data is not served for you. It should be you to make the data ready for your purposes. Keep in mind that the resources and references still are limited. In our next season at the development part, we will see how we do &ldquo;Feature Engineering&rdquo; on OHLCV data and prepare them for training.</p>
+  <p style="margin:0 0 1rem;">
+    Many ML tutorials provide pre-prepared datasets, so you start straight with training. But in reality, data is rarely ready-made—you must prepare it yourself. Keep in mind that resources and references can be limited.
+  </p>
 
-​
-`
+  <p style="margin:0 0 1rem;">
+    In our next season (development), we will cover how to do <strong>feature engineering</strong> on OHLCV data to prepare it for training.
+  </p>
+
+</section>
+`;

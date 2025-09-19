@@ -1,75 +1,141 @@
 export default `
+<section aria-labelledby="ml-model-title" style="max-width:720px;margin:0 auto;padding:16px;line-height:1.75;font-size:16px;">
 
+  <h2 id="ml-model-title" style="font-size:1.25rem;line-height:1.3;margin:0 0 1rem;font-weight:700;">
+    Previously on “How to design a machine learning trading bot”
+  </h2>
 
-<p><strong>Previously on &ldquo;How to design a machine learning trading bot&rdquo;</strong></p>
+  <p style="margin:0 0 1rem;">
+    We started with “
+    <a href="https://cognitrade.1des.com/posts/1-how-to-design-ml-trading-bot-part-1-data-collection" target="_blank" rel="noopener noreferrer">
+      Collecting Data
+    </a>”.
+  </p>
 
-<p>We have started with &ldquo;<a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p1-data-collection" target="_blank">Collecting Data</a>&rdquo;:</p>
+  <p style="margin:0 0 1rem;">
+    We learned what OHLCV data is, and why both historical and online data are essential.
+  </p>
 
-<p>We found out what is OHLCV data and, we learned why we need historical data and online data both together.</p>
+  <p style="margin:0 0 1rem;">
+    Then we continued with “
+    <a href="https://cognitrade.1des.com/posts/2-how-to-design-ml-trading-bot-part-2-data-analysis" target="_blank" rel="noopener noreferrer">
+      Data Analysis
+    </a>”.
+  </p>
 
-<p>Then we continued with &ldquo;<a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p2-data-analysis" target="_blank">Data Analysis</a>&rdquo;</p>
+  <p style="margin:0 0 1rem;">
+    We saw how critical data cleaning and feature engineering are. To build a stable ML model, we must prepare data correctly and use visualization to better reach our goals.
+  </p>
 
-<p>We have seen how cleaning the data including features engineering is important. We learned that to make a stable machine learning model we need to prepare data in the right way and finally, we found out how visualizing data can help us to reach the goal.</p>
+  <p style="margin:0 0 1rem;">
+    Then we moved to
+    <a href="https://cognitrade.1des.com/posts/3-how-to-design-ml-trading-bot-part-3-pattern-recognition" target="_blank" rel="noopener noreferrer">pattern recognition</a>:
+  </p>
 
-<p>Then we continued with&nbsp;<a href="https://1des.com/blog/posts/how-to-design-machine-learning-trading-bot-p3-pattern-recognition" target="_blank">finding a pattern</a>:</p>
+  <p style="margin:0 0 1rem;">
+    We noted that you can easily fall into the trap of seeing patterns where none exist—like a horoscopist—so you must follow scientific methods like an astronomer. We identified a simple pattern, “SMA20,” and discussed labeling them to [0,1].
+  </p>
 
-<p>We noted that you can be trapped like a horoscopist to find a pattern in data, and always follow the scientific ways and act as an astronomer. Then we had found a very simple pattern which was &ldquo;SMA20&rdquo; and we discussed how to label them to [0,1].</p>
+  <p style="margin:0 0 1rem;">
+    Now, it’s time to build a model. As always, remember: in this season we design; in the next season, we will develop.
+  </p>
 
-<p>Now, it&rsquo;s time to make a model. Like always I need to mention that at this season we design our product and in the next season we will develop it.</p>
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+    <em>You should always design your pipeline on paper or in your mind before development. That’s the method I follow—and it works for me ;)</em>
+  </blockquote>
 
-<blockquote><em>In regard, you should always design your pipeline on paper or even in your mind and then go for development. At least, I can say this is my way to follow the process and so far it works for me ;)</em></blockquote>
+  <figure style="margin:0 0 1rem;">
+    <img alt="It Works!" src="/posts/4/works.gif" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+  </figure>
 
-<p><img alt="It Works!" src="https://1des.com/uploads/posts/how-to-design-p4/works.gif" style="height:360px; width:480px" /></p>
+  <h3 style="font-size:1.125rem;line-height:1.35;margin:1.25rem 0 0.75rem;font-weight:700;">
+    Step 4: Building a Model Based on the Determined Pattern
+  </h3>
 
-<p><strong>Step 4: Building a Model based on the determined pattern</strong></p>
+  <p style="margin:0 0 1rem;">Let’s look at the data format we have at this moment:</p>
 
-<p>Let&#39;s start with the format of data in our hands at this moment.</p>
+  <p style="margin:0 0 1rem;">We have OHLCV plus SMA20 and a target column, like this:</p>
 
-<p>We have OHLCV plus SMA20 and a column named target, like this:</p>
+  <figure style="margin:0 0 1rem;">
+    <img alt="Sample dataset with OHLCV and SMA20" src="/posts/4/How_to_design_p4_sample1.png" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+    <figcaption style="font-size:0.875rem;color:#6b7280;margin-top:0.5rem;">
+      Source:
+      <a href="https://gist.github.com/25mordad/64a39ecc0ef71140140251b61db93572" target="_blank" rel="noopener noreferrer">
+        GitHub Gist
+      </a>
+    </figcaption>
+  </figure>
 
-<p><img alt="How_to_design_p4_sample1.csv" src="https://1des.com/uploads/posts/how-to-design-p4/How_to_design_p4_sample1.png" style="height:253px; width:927px" /></p>
+  <h3 style="font-size:1.125rem;line-height:1.35;margin:1.25rem 0 0.75rem;font-weight:700;">Machine Learning</h3>
 
-<p>Source:&nbsp;<a href="https://gist.github.com/25mordad/64a39ecc0ef71140140251b61db93572" target="_blank">https://gist.github.com/25mordad/64a39ecc0ef71140140251b61db93572</a></p>
+  <p style="margin:0 0 1rem;">
+    At this step, machine learning helps us build a model. The main question is: how? Let’s quickly review how ML classification techniques work:
+  </p>
 
-<p><strong>Machine Learning</strong></p>
+  <figure style="margin:0 0 1rem;">
+    <img alt="Building ML Model process" src="/posts/4/build-model.png" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+  </figure>
 
-<p>So, at this step machine can help us to build a model, and the main question is how? Let&rsquo;s review how machine learning classification techniques work:</p>
+  <p style="margin:0 0 1rem;">
+    First, the machine receives labeled data (which we already prepared).
+  </p>
+  <p style="margin:0 0 1rem;">
+    Then, by splitting the data into training and testing sets, the model learns from the training data.
+  </p>
+  <p style="margin:0 0 1rem;">
+    Finally, we test on the test dataset to see if the model fits well.
+  </p>
 
-<p><img alt="Build ML Model" src="https://1des.com/uploads/posts/how-to-design-p4/how-to-p4.png" style="height:462px; width:633px" /></p>
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+    <em>This is a simplified version—the real process is a bit more complex.</em>
+  </blockquote>
 
-<p>First, the machine gets huge labeled data. (we already prepared it)</p>
+  <p style="margin:0 0 1rem;">
+    In many fields, reaching a working model would be the end. But in finance and trading, it isn’t. We still need to perform <strong>Backtesting</strong>.
+  </p>
 
-<p>Then, by splitting the data to train and test, the machine is going to find a proper measure for the training set.</p>
+  <h3 style="font-size:1.125rem;line-height:1.35;margin:1.25rem 0 0.75rem;font-weight:700;">Backtesting</h3>
 
-<p>Finally, we do testing on the test dataset to find out if the model we built is fit or not.</p>
+  <p style="margin:0 0 1rem;">
+    At this point, we define a Buy/Sell strategy. For example, with SMA20:
+  </p>
+  <ul style="margin:0 0 1rem 1.25rem;padding:0;">
+    <li>The first time we see a label [1], open a Long position (Buy).</li>
+    <li>If in a Long position, close it as soon as we see label [0].</li>
+  </ul>
 
-<blockquote><em>I&rsquo;ve just simplified the whole procedures, it&rsquo;s a little bit more complicated than what I have told here</em></blockquote>
+  <p style="margin:0 0 1rem;">
+    If this sounds abstract, look at the following data. It shows when we opened and closed long positions:
+  </p>
 
-<p>In many problems, they use machine learning to solve their problem that step is their final step and they reached their models, but in finance and trading problems, that level is not the end. We still need more jobs to do to find a fit model. We need to do &ldquo;Backtesting&rdquo; on the test dataset to review the result.</p>
+  <figure style="margin:0 0 1rem;">
+    <img alt="Trading signals example" src="/posts/4/How_to_design_p4_sample2.png" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+    <figcaption style="font-size:0.875rem;color:#6b7280;margin-top:0.5rem;">
+      Source:
+      <a href="https://gist.github.com/25mordad/511f39f7cb15260736248ce261008a0f" target="_blank" rel="noopener noreferrer">
+        GitHub Gist
+      </a>
+    </figcaption>
+  </figure>
 
-<p><strong>Backtesting</strong></p>
+  <h3 style="font-size:1.125rem;line-height:1.35;margin:1.25rem 0 0.75rem;font-weight:700;">Conclusion</h3>
 
-<p>At this point, we need to define a strategy to buy and sell. In our sample (SMA20) our strategy to buy/sell could be very simple like this:</p>
+  <p style="margin:0 0 1rem;">
+    A trading model is a package of machine learning methods plus backtesting. Sometimes, adding extra rules to predictions improves performance.
+  </p>
 
-<p>-The first time you see a label [1] open a long position (Buy)</p>
+  <p style="margin:0 0 1rem;">
+    From my perspective, a complete model includes both Long and Short strategies. That usually means having two ML models: one for Long positions, one for Short. Here, creativity helps you design a comprehensive model.
+  </p>
 
-<p>- If you are in a Long position, close it, as soon as you see the label [0]</p>
+  <figure style="margin:0 0 1rem;">
+    <img alt="Trading models concept" src="/posts/4/models.jpg" loading="lazy"
+         style="display:block;width:100%;height:auto;border-radius:12px;" />
+  </figure>
 
-<p>If you couldn&rsquo;t follow what we talking about, check the following data. You can see the time we open the long position and the time we close it.</p>
-
-<p><img alt="How_to_design_p4_sample2.csv" src="https://1des.com/uploads/posts/how-to-design-p4/How_to_design_p4_sample2.csv.png" style="height:925px; width:954px" /></p>
-
-<p>Source:&nbsp;<a href="https://gist.github.com/25mordad/511f39f7cb15260736248ce261008a0f" target="_blank">https://gist.github.com/25mordad/511f39f7cb15260736248ce261008a0f</a></p>
-
-<p><strong>Conclusion:</strong></p>
-
-<p>A trading model is a package of machine learning methods plus backtesting. Even, in some cases to have better performance, you can apply some rules to your prediction.</p>
-
-<p>Also, from my point of view, a complete model contains a Long and Short Strategy together. In this case, you need to have more than one ML model.</p>
-
-<p>As an example, an ML model for the Long position and an ML model for the Short position. At this place, your creativity helps you to build a comprehensive model.</p>
-
-<p><img alt="Models" src="https://1des.com/uploads/posts/how-to-design-p4/models.jpg" style="height:463px; width:700px" /></p>
-
-
-`
+</section>
+`;

@@ -1,0 +1,13 @@
+{
+  "id": 22,
+  "title": "From LSTM to PatchTST: Rethinking Time-Series Forecasting for Crypto",
+  "author": "K1",
+  "date": "Sep 29, 2025",
+  "image": "/posts/22/lstm-to-patchtst-forecasting.jpg",
+  "summary": "Explore how PatchTST is reshaping time-series forecasting in crypto markets. This article explains Transformers, self-attention, and why PatchTST stands out compared to traditional LSTMs.",
+  "seo_title": "From LSTM to PatchTST: Time-Series Forecasting for Crypto",
+  "seo_description": "Discover how PatchTST improves crypto forecasting. Learn the theory behind Transformers, attention, and why PatchTST is a strong alternative to LSTM models.",
+  "seo_keywords": "PatchTST crypto forecasting, LSTM vs Transformer, time-series forecasting crypto, deep learning PatchTST, BTCUSDT PatchTST model",
+  "slug": "22-lstm-to-patchtst-crypto-forecasting",
+  "categories": ["time-series", "crypto", "ai", "forecasting", "transformers"]
+}

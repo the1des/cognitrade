@@ -5,14 +5,16 @@
   "type": "module",
   "scripts": {
     "generate:blog": "node scripts/generateBlogIndex.js",
-    "dev": "npm run generate:blog && wrangler dev",
-    "start": "wrangler dev",
-    "deploy": "npm run generate:blog && wrangler deploy",
+    "build:css": "tailwindcss -c tailwind.config.js -i ./src/styles/tailwind.css -o ./public/styles.css --minify",
+    "dev": "npm run generate:blog && npm run build:css && wrangler dev",
+    "start": "npm run build:css && wrangler dev",
+    "deploy": "npm run generate:blog && npm run build:css && wrangler deploy",
     "test": "vitest",
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.8.19",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5.5.2",
     "vitest": "~3.2.0",
     "wrangler": "^4.24.0"

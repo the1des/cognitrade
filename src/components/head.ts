@@ -18,21 +18,7 @@ export function renderHead(
       <meta property="og:title" content="${title}" />
       <meta property="og:type" content="Article" />
 
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'deep-indigo': '#221869',
-                'vibrant-cyan': '#00FFD1',
-                'dark-navy': '#0A0F1F',
-              }
-            }
-          }
-        }
-      </script>
-
+      <link rel="stylesheet" href="/styles.css">
       <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet"/>

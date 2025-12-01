@@ -40,7 +40,7 @@ export default `
   </p>
 
   <p style="margin:0 0 0.5rem;">Let’s start with this main question in the market:</p>
-  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid rgba(0,255,209,0.4);background:#111827;color:#e5e7eb;border-radius:8px;">
     Do you believe some patterns in the market repeat frequently? If so, we are on the same track.
   </blockquote>
 
@@ -120,7 +120,7 @@ export default `
     After training an ML classifier, if the prediction is 1 we’re in a bullish trend; if it’s 0, we’re not.
   </p>
 
-  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid rgba(0,255,209,0.4);background:#111827;color:#e5e7eb;border-radius:8px;">
     <em>I always start with a simple concept. Once you fully understand the idea, you can develop it into a more complex solution.</em>
   </blockquote>
 

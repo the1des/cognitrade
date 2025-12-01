@@ -14,7 +14,7 @@ export default `
     We found out what OHLCV data is, and we learned why we need both historical and online data.
   </p>
 
-  <blockquote style="margin:0 0 1.25rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+  <blockquote style="margin:0 0 1.25rem;padding:0.75rem 1rem;border-left:4px solid rgba(0,255,209,0.4);background:#111827;color:#e5e7eb;border-radius:8px;">
     In this part, we dive into the process of preparing and transforming raw financial data into clean, structured input ready for machine learning models—a crucial step that determines the accuracy and reliability of your trading bot.
   </blockquote>
 

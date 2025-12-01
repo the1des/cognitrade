@@ -40,7 +40,7 @@ export default `
     Now, it’s time to build a model. As always, remember: in this season we design; in the next season, we will develop.
   </p>
 
-  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid rgba(0,255,209,0.4);background:#111827;color:#e5e7eb;border-radius:8px;">
     <em>You should always design your pipeline on paper or in your mind before development. That’s the method I follow—and it works for me ;)</em>
   </blockquote>
 
@@ -89,7 +89,7 @@ export default `
     Finally, we test on the test dataset to see if the model fits well.
   </p>
 
-  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid rgba(0,255,209,0.4);background:#111827;color:#e5e7eb;border-radius:8px;">
     <em>This is a simplified version—the real process is a bit more complex.</em>
   </blockquote>
 

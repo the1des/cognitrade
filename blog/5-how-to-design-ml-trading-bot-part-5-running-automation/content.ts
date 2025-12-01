@@ -121,7 +121,7 @@ export default `
     <a href="https://cognitrade.1des.com/posts/4-how-to-design-ml-trading-bot-part-4-build-model" target="_blank" rel="noopener noreferrer"><em>building a model</em></a><em>.</em>
   </p>
 
-  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid rgba(0,255,209,0.4);background:#111827;color:#e5e7eb;border-radius:8px;">
     Model output: Open a Long position on BTC/USDT
   </blockquote>
 

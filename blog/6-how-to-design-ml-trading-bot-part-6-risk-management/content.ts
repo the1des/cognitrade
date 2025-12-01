@@ -65,7 +65,7 @@ export default `
   </h3>
 
   <p style="margin:0 0 0.5rem;">First, let’s answer this question:</p>
-  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid rgba(0,255,209,0.4);background:#111827;color:#e5e7eb;border-radius:8px;">
     Why do we need to monitor the trade and our position?
   </blockquote>
 
@@ -115,7 +115,7 @@ export default `
 
   <p style="margin:0 0 0.5rem;">Let’s consider we are trading in the 1H (1 hour) timeframe.</p>
 
-  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid #e5e7eb;background:#f9fafb;border-radius:8px;">
+  <blockquote style="margin:0 0 1rem;padding:0.75rem 1rem;border-left:4px solid rgba(0,255,209,0.4);background:#111827;color:#e5e7eb;border-radius:8px;">
     <em>Trading in the 1H timeframe means our decision to buy and sell is based on the OHLCV in 1H.</em>
   </blockquote>
 

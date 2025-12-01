@@ -6,23 +6,53 @@ import { renderSitemap }  from './pages/sitemap'
 import { posts }          from './pages/blogIndex'
 import { renderNotFound } from './pages/notFound'
 
+const addSecurityHeaders = (res: Response): Response => {
+  const headers = new Headers(res.headers)
+
+  headers.set(
+    'Content-Security-Policy',
+    [
+      "default-src 'self'",
+      "script-src 'self'",
+      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+      "font-src 'self' https://fonts.gstatic.com",
+      "img-src 'self' data:",
+      "connect-src 'self'",
+      "object-src 'none'",
+      "base-uri 'self'",
+      "form-action 'self'",
+      "frame-ancestors 'none'",
+    ].join('; ')
+  )
+  headers.set('Referrer-Policy', 'strict-origin-when-cross-origin')
+  headers.set('X-Frame-Options', 'DENY')
+  headers.set('Permissions-Policy', 'geolocation=(), microphone=(), camera=()')
+  headers.set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload')
+
+  return new Response(res.body, {
+    status: res.status,
+    statusText: res.statusText,
+    headers,
+  })
+}
+
 export default {
   async fetch(request: Request): Promise<Response> {
     const url = new URL(request.url)
 
     // Home page
     if (url.pathname === '/') {
-      return renderHomePage()
+      return addSecurityHeaders(renderHomePage())
     }
 
     // Posts list
     if (url.pathname === '/posts') {
-      return renderPosts()
+      return addSecurityHeaders(renderPosts())
     }
 
     // Sitemap
     if (url.pathname === '/sitemap.xml') {
-      return renderSitemap()
+      return addSecurityHeaders(renderSitemap())
     }
 
     // Single post
@@ -32,12 +62,12 @@ export default {
       const post = posts.find(p => p.slug === slug)
 
       if (!post) {
-        return renderNotFound()
+        return addSecurityHeaders(renderNotFound())
       }
-      return renderPost(post)
+      return addSecurityHeaders(renderPost(post))
     }
 
     // Fallback 404
-    return renderNotFound()
+    return addSecurityHeaders(renderNotFound())
   }
 }

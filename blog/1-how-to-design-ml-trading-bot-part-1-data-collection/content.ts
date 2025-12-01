@@ -37,7 +37,7 @@ export default `
   <!-- Responsive YouTube embed -->
   <div data-oembed-url="https://www.youtube.com/watch?v=CIBnXsOfcJw" style="position:relative;width:100%;padding-bottom:56.25%;margin:0 0 1.25rem;">
     <iframe
-      src="//if-cdn.com/a5Soots"
+      src="https://www.youtube.com/embed/CIBnXsOfcJw?rel=0"
       title="YouTube video player"
       allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen

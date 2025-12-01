@@ -33,7 +33,7 @@ export default `
   <div data-oembed-url="https://www.youtube.com/watch?v=CIBnXsOfcJw" style="position:relative;width:100%;padding-bottom:56.25%;margin:0 0 1rem;border-radius:12px;overflow:hidden;background:#000;">
     <iframe
       title="YouTube video player"
-      src="//if-cdn.com/a5Soots"
+      src="https://www.youtube.com/embed/CIBnXsOfcJw?rel=0"
       allow="accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *; web-share *;"
       allowfullscreen
       loading="lazy"

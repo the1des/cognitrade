@@ -18,7 +18,7 @@ export function renderHead(
       <meta property="og:title" content="${title}" />
       <meta property="og:type" content="Article" />
 
-      <link rel="stylesheet" href="/styles.css">
+      <link rel="stylesheet" href="/styles.css?v=2">
       <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet"/>
@@ -65,14 +65,5 @@ export function renderHead(
         }
       </style>
     </head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-922Y9XEYTX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-922Y9XEYTX');
-    </script>
   `
 }

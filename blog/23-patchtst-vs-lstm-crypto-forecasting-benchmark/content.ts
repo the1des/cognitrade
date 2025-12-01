@@ -2,7 +2,7 @@ export default `
 <div class="prose prose-invert max-w-3xl md:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 text-gray-100 leading-relaxed">
 
   <p>
-    In <strong>Part 1</strong> we dug into why <strong>PatchTST</strong> looks so promising for volatile, long-horizon crypto data like <strong>BTCUSDT</strong>. Now we’re rolling up our sleeves and running a head-to-head benchmark against our production <strong>LSTM</strong>.
+    In <a href="/posts/22-lstm-to-patchtst-crypto-forecasting"><strong>Part 1</strong></a> we dug into why <strong>PatchTST</strong> looks so promising for volatile, long-horizon crypto data like <strong>BTCUSDT</strong>. Now we’re rolling up our sleeves and running a head-to-head benchmark against our production <strong>LSTM</strong>.
   </p>
 
   <hr class="my-10 border-gray-700" />
@@ -47,13 +47,13 @@ export default `
     <tbody>
       <tr>
         <td class="border border-gray-700 px-3 py-2">LSTM</td>
-        <td class="border border-gray-700 px-3 py-2">~x.xx</td>
-        <td class="border border-gray-700 px-3 py-2">~$xxx</td>
+        <td class="border border-gray-700 px-3 py-2">0.072</td>
+        <td class="border border-gray-700 px-3 py-2">$192</td>
       </tr>
       <tr>
         <td class="border border-gray-700 px-3 py-2 font-semibold">PatchTST</td>
-        <td class="border border-gray-700 px-3 py-2 font-semibold">~x.xx</td>
-        <td class="border border-gray-700 px-3 py-2 font-semibold">~$xxx</td>
+        <td class="border border-gray-700 px-3 py-2 font-semibold">0.058</td>
+        <td class="border border-gray-700 px-3 py-2 font-semibold">$151</td>
       </tr>
     </tbody>
   </table>

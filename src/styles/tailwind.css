@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .prose code,
+  .prose-invert code {
+    @apply bg-gray-800 text-vibrant-cyan font-semibold px-[0.35em] py-[0.2em] rounded-md;
+  }
+  .prose code::before,
+  .prose code::after,
+  .prose-invert code::before,
+  .prose-invert code::after {
+    content: '';
+  }
+}

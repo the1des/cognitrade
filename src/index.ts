@@ -29,6 +29,7 @@ const addSecurityHeaders = (res: Response): Response => {
   headers.set('X-Frame-Options', 'DENY')
   headers.set('Permissions-Policy', 'geolocation=(), microphone=(), camera=()')
   headers.set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload')
+  headers.set('X-Content-Type-Options', 'nosniff')
 
   return new Response(res.body, {
     status: res.status,

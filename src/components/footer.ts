@@ -1,7 +1,7 @@
 export function renderFooter(): string {
   return `
     <footer class="border-t border-gray-800 pt-8 flex justify-between items-center">
-      <a href="https://1des.com/" target="_blank" ><img alt="1DES logo" class="h-8 w-auto" src="/images/logo.png"/></a>
+      <a href="https://1des.com/" target="_blank" rel="noopener noreferrer"><img alt="1DES logo" class="h-8 w-auto" src="/images/logo.png"/></a>
       <div class="flex space-x-4">
         <!-- YouTube -->
         <a class="text-gray-400 hover:text-vibrant-cyan transition-colors"

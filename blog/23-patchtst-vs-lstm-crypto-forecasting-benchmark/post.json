@@ -1,0 +1,13 @@
+{
+  "id": 23,
+  "title": "PatchTST vs LSTM: A Hands-On Benchmark for Crypto Forecasting",
+  "author": "K1",
+  "date": "Oct 15, 2025",
+  "image": "/posts/23/patchtst-vs-lstm-benchmark.jpg",
+  "summary": "We benchmark PatchTST against our production LSTM on BTCUSDT, sharing setup details, early results, and the artifacts you can inspect yourself.",
+  "seo_title": "PatchTST vs LSTM: Crypto Forecasting Benchmark",
+  "seo_description": "A hands-on benchmark comparing PatchTST to LSTM for crypto forecasting. See the setup, metrics, and artifacts for BTCUSDT predictions.",
+  "seo_keywords": "PatchTST vs LSTM, crypto forecasting benchmark, BTCUSDT transformer model, time series transformer, LSTM baseline crypto",
+  "slug": "23-patchtst-vs-lstm-crypto-forecasting-benchmark",
+  "categories": ["crypto", "forecasting", "time-series", "transformers", "deep-learning"]
+}
